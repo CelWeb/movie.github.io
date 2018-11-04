@@ -402,6 +402,7 @@ a:hover {
   padding: 0;
 }
 .dropdown__profile {
+  display: none;
   position: absolute;
   color: #000000;
 }
