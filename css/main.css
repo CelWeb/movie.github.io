@@ -588,6 +588,14 @@ a:hover {
 .movie__item-category {
   opacity: 0.4;
 }
+.movie__item__info {
+  position: absolute;
+  right: 30%;
+  bottom: 0;
+}
+.movie__item-reiting {
+  font-weight: 500;
+}
 .owl-nav {
   position: absolute;
   top: -50px;
