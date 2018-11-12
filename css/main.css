@@ -2,7 +2,7 @@
    Основные стили
 ====================================*/
 body {
-  min-width: 1520px;
+  min-width: 1320px;
   background: #171717;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -80,7 +80,7 @@ a:hover {
   margin-left: auto;
   padding-left: 11px;
   padding-right: 11px;
-  width: 1500px;
+  max-width: 1500px;
 }
 .main__navigation {
   display: -webkit-box;
@@ -125,7 +125,7 @@ a:hover {
   font-size: 16px;
   color: #ffffff;
   text-decoration: none;
-  padding: 24px 40px;
+  padding: 23px 40px;
   position: relative;
   font-weight: 500;
 }
@@ -162,7 +162,7 @@ a:hover {
 }
 .search__form {
   position: relative;
-  width: 1000px;
+  width: 500px;
 }
 .search__input {
   background: transparent;
@@ -528,9 +528,12 @@ a:hover {
 /*====================================
    Контент Сайта
 ====================================*/
+.movie__premiere {
+  position: relative;
+}
 .movie__premiere-title {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
 }
 .movie__items-hover {
@@ -556,6 +559,7 @@ a:hover {
   opacity: 0;
 }
 .movie__item-quality {
+  color: #00faa7;
   font-size: 14px;
   font-weight: 600;
 }
@@ -571,6 +575,19 @@ a:hover {
   background-size: cover;
   top: 60px;
   right: 35%;
+}
+.quality-icons {
+  position: relative;
+}
+.quality-icons::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../img/svg-icons/next.svg) no-repeat;
+  background-size: cover;
+  top: -10px;
+  left: -90px;
 }
 .movie__item-info {
   margin: 0;
@@ -655,4 +672,31 @@ a:hover {
   background-size: cover;
   top: 9px;
   right: 5px;
+}
+.btn__all {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  background: #333333;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.btn__all:hover,
+.btn__all:focus,
+.btn__all:active {
+  background: #fff;
+  color: #333333;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.movie__premiere-link {
+  color: #ffffff;
+}
+.movie__premiere-link:hover {
+  color: #ecbc37;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
