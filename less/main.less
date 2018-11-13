@@ -480,6 +480,9 @@ position: relative;
 /*====================================
    Контент Сайта
 ====================================*/
+.content {
+    margin-bottom: 50px;
+}
 .movie__premiere {
     position: relative;
 }
@@ -488,7 +491,9 @@ position: relative;
     font-weight: 600;
     text-transform: capitalize;
 }
-
+.movie__items {
+    text-align: center;
+}
 .movie__items-hover {
     position: relative;
 }
@@ -649,4 +654,27 @@ position: relative;
 .movie__premiere-link:hover {
     color: #ecbc37;
     transition: 0.5s;
+}
+/*====================================
+   Футер Сайта
+====================================*/
+.footer .container__flex {
+    border-top: 1px solid #333;
+    margin-bottom: 10px;
+    padding-right: 12px;
+}
+.footer__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.f__menu-link {
+    color: #ffffff;
+    margin-right: 20px;
 }

@@ -527,6 +527,9 @@ a:hover {
 /*====================================
    Контент Сайта
 ====================================*/
+.content {
+  margin-bottom: 50px;
+}
 .movie__premiere {
   position: relative;
 }
@@ -534,6 +537,9 @@ a:hover {
   font-size: 24px;
   font-weight: 600;
   text-transform: capitalize;
+}
+.movie__items {
+  text-align: center;
 }
 .movie__items-hover {
   position: relative;
@@ -698,4 +704,37 @@ a:hover {
   color: #ecbc37;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+/*====================================
+   Футер Сайта
+====================================*/
+.footer .container__flex {
+  border-top: 1px solid #333;
+  margin-bottom: 10px;
+  padding-right: 12px;
+}
+.footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+.f__menu-link {
+  color: #ffffff;
+  margin-right: 20px;
 }
