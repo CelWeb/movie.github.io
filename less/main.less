@@ -11,6 +11,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: subpixel-antialiased!important;
 }
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 *,*::before, *::after {
     box-sizing: inherit;
 }
@@ -61,6 +69,7 @@ a:hover {
     background: @header-bg;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.5);
     margin-bottom: 50px;
+    flex: 0 0 auto;
 }
 .header__fixed{
     position: fixed;
@@ -481,6 +490,7 @@ position: relative;
    Контент Сайта
 ====================================*/
 .content {
+    flex: 1 0 auto;
     margin-bottom: 50px;
 }
 .movie__premiere {
@@ -492,14 +502,21 @@ position: relative;
     text-transform: capitalize;
 }
 .movie__items {
+    display: inline-block;
+    margin-right: 5px;
+    width: 200px;
+    height: 400px;
+    vertical-align: top;
     text-align: center;
+}
+.poster__img {
+    max-width: 100%;
 }
 .movie__items-hover {
     position: relative;
 }
 
 .movie__items:hover .movie__items-mask {
-	display: block;
 	opacity: 100;
 	cursor: pointer;
 	 transition: all 0.3s ease-in-out;
@@ -516,10 +533,16 @@ position: relative;
     text-align: center;
     opacity: 0;
 }
-.movie__item-quality {
+.movie__item-quality{
     color: #ffffff;
     font-size: 14px;
     font-weight: 600;
+    background: #1e1e1e;
+    display: block !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 70px;
+    min-height: 20px;
 }
 .movie__item-play {
     position: relative;
@@ -655,9 +678,69 @@ position: relative;
     color: #ecbc37;
     transition: 0.5s;
 }
+.movie__full-info {
+    display: flex;
+    padding-top: 100px;
+}
+.movie__full-left {
+    margin-right: 20px;
+   
+}
+.movie__full-right {
+  padding:0 10px; 
+}
+.movie__full-watch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.movie__watch-full {
+    text-align: center;
+    border-radius: 5px;
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(45deg,#2476d8,#24b2d8);
+    background-image: -o-linear-gradient(45deg,#2476d8,#24b2d8);
+    background-image: linear-gradient(45deg,#2476d8,#24b2d8);
+    color: #ffffff;
+    padding: 12px 40px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.movie__watch-trailer {
+    color: #171717;
+    padding: 12px 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(255,255,255,.9);
+}
+.movie_full-info {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+.movie__info-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.movie__info-link span {
+    font-weight: normal;
+}
+.mt {
+    margin-bottom: 0;
+}
+.desc {
+    line-height: 1.5;
+}
 /*====================================
    Футер Сайта
 ====================================*/
+.footer {
+    flex: 0 0 auto;
+}
 .footer .container__flex {
     border-top: 1px solid #333;
     margin-bottom: 10px;

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie</title>
+    <meta content="width=1024, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!--Шапка Сайта-->
+    <header class="header">
+        <div class="container__flex">
+            <nav class="main__navigation">
+             <div class="navigation__menu">
+                <div class="header__logo_link header__logo">
+                    <a href="index.html" class="logo__link">
+                        <img src="img/logo.svg" alt="logo" class="logo__img" width="100" height="22">
+                    </a>
+                </div>
+                <ul class="navigation">
+                    <li class="button-dropdown"><a href="javascript:void(0)"  class="dropdown-toggle catalog nav__link">Каталог</a></a>
+
+                        <div id="popup1" class="dropdown  dropdown__navigation-multi">
+                            <ul class="dropdown__navigation">
+                                <li><a href="movie.html" class="dropdown__nav-link">Фильмы</a></li>
+                                <li><a href="#" class="dropdown__nav-link">Сериалы</a></li>
+                                <li><a href="#" class="dropdown__nav-link">Мультфильмы</a></li>
+                                <li><a href="#" class="dropdown__nav-link">Аниме</a></li>
+                                <div class="dropdown__hr"></div>
+                                <li><a href="#" class="dropdown__nav-link">Подборки</a></li>
+                                <li><a href="#" class="dropdown__nav-link">Фильтр</a></li>
+                            </ul>
+                            <ul class="dropdown__tab">
+                                <li><a href="#" class="dropdown__tab-link dropdown__tab-link_active">Новинки</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Все жанры</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Экшн</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Военные</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Детективы</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Драмы</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Исторические</a></li>
+                            </ul>
+                             <ul class="dropdown__tab">
+                                <li><a href="#" class="dropdown__tab-link">Комедии</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Меха</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Романтика</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Повседневность</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Приключения</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Семейные</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Спорт</a></li>
+                            </ul>
+                             <ul class="dropdown__tab">
+                                <li><a href="#" class="dropdown__tab-link">Триллеры</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Ужасы</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Фантастика</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Фэнтези</a></li>
+                                <li><a href="#" class="dropdown__tab-link">Этти</a></li>
+                            </ul>
+                        </div>
+                      
+                    </li>
+                </ul>
+                <form action="" id="seek-torrent" class="search__form">
+                    <input type="text" class="seek-torrent search__input" placeholder="Поиск">
+                    <a href="#" class="search__icons"></a>
+                </form>
+             </div>
+            <!-- /.navigation__menu -->
+            <ul class="profile__navigation">
+                <li><a href="#" class="profile__link profile__replay"></a></li>
+                <li class="button-dropdown"><a href="javascript:void(0)" class="dropdown-toggle profile__link profile__notification"></a>
+                    <div class="dropdown dropdown__notice">
+                      <div class="dropdown__container">
+                        <div class="dropdown__tabs-button">
+                            <div class="btn__group">
+                                <button class="btn btn__azure">Обновления</button>
+                                <button class="btn btn__gray">События</button>
+                            </div>
+                        </div>
+                        <div class="tabs__page">
+                            <h4 class="tabs__page-text">Уведомлений пока нет</h4>
+                            <p class="tabs__page-desc">Подпишитесь на любимые сериалы <br> и получайте уведомления о выходе<br> новых серий</p>
+                        </div>
+                      </div>
+                      <!-- /.dropdown__container -->
+                    </div>
+                </li>
+                <li class="button-dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle profile__link_a profile__avatar">
+                     <img src="img/avatar.jpg" alt="avatar" class="avatar__img" width="35" height="35">
+                </a>
+                <div class="dropdown dropdown__profile">
+                    <div class="dropdown__container">
+                        <div class="profile">
+                            <div class="profile__avatar">
+                                <img src="img/avatar.jpg" alt="avatar" class="avatar__img" width="40" height="40">
+                            </div>
+                            <div class="profile__desc">
+                                <div class="profile__name">
+                                    <h4 class="profile__title">Cel</h4>
+                                </div>
+                                <div class="profile__email">
+                                    <p class="profile__email-name">celweb@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile__subscription">
+                            <h4 class="sub__day">Осталось 0 дней</h4>
+                            <div class="sub__progresbar"></div>
+                            <a href="#" class="payment nav__drop-link">Оплата доступа</a>
+                            <a href="#" class="bonuses nav__drop-link">Получить бонусные дни</a>
+                        </div>
+                        <div class="profile__drop-nav">
+                            <ul class="nav__profile">
+                                <li><a href="#" class="nav__drop-link">Смотрю сейчас</a></li>
+                                <li><a href="#" class="nav__drop-link">Избранное</a></li>
+                                <li><a href="#" class="nav__drop-link">Смотреть позже</a></li>
+                                <li><a href="#" class="nav__drop-link">Просмотренное</a></li>
+                                <li><a href="#" class="nav__drop-link">Подписки</a></li>
+                            </ul>
+                        </div>
+                        <div class="profile__drop-bottom">
+                            <ul class="nav__profile">
+                                <li><a href="#" class="nav__drop-link">Подключить устройства </a></li>
+                                <li><a href="#" class="nav__drop-link">Настройки</a></li>
+                                <li><a href="#" class="nav__drop-link">Выход</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.dropdown__container -->
+                </div>
+            </li>
+            </ul>
+            <!-- /.profile__navigation -->
+            </nav>
+            <!-- /.main__navigation -->
+
+        </div>
+        <!-- /.container__flex -->
+    </header>
+    <!--/Шапка Сайта-->
+
+    <!--Контент Сайта-->
+<main class="content">
+        <div class="container__flex">
+            <div class="movie__full-info">
+               <div class="movie__full-left">
+                   <img src="img/poster/4.jpg" alt="poster" class="poster__full" width="230" height="340">
+                    <div class="movie__full-watch">
+                        <a href="#" class="btn movie__watch-full">Смотреть</a>
+                        <a href="#" class="btn movie__watch-trailer">Трейлер</a>
+                    </div>
+               </div>
+               <!-- /.movie__full-left -->
+               <div class="movie__full-right">
+                    <h2 class="movie__full-title">Небоскрёб</h2>
+                    <p class="movie__full-name">«The sky is the limit»</p>
+                    <ul class="movie_full-info">
+                            <li><a class="movie__info-link">Дата выхода:<span> 12 июля 2018 г. (РФ)</span></a></li>
+                            <li><a class="movie__info-link">Жанр:<span> боевик, триллер</span></a></li>
+                            <li><a class="movie__info-link">Страны:<span> США</span></a></li>
+                            <li><a class="movie__info-link">Режиссёр:<span> Роусон Маршалл Тёрбер</span></a></li>
+                            <li><a class="movie__info-link">Музыка:<span> Стив Яблонски</span></a></li>
+                            <li><a class="movie__info-link">Длительность:<span> 103 мин. / 01:43</span></a></li>
+                            <li><a class="movie__info-link">Возраст:<span> 16+</span></a></li>
+                        </ul>
+                      <h4 class="desc">Описание:</h4>
+                    <p class="movie__desc">Самый высокий и технологичный небоскрёб в мире становится центром огненной катастрофы. Только бывший агент ФБР, а теперь эксперт по безопасности Уилл Сойер может спасти вертикальный город под небесами. Когда нельзя доверять никому, а жизнь семьи в опасности, каждая секунда на счету.</p>
+                    
+               </div>
+               <!-- /.movie__full-right -->
+            </div>
+            <!-- /.movie__full-info -->
+        </div>
+</main>
+<!--/Контент Сайта-->
+
+    <!--Футер Сайта-->
+    <footer class="footer">
+        <div class="container__flex">
+            <div class="footer__navigation">
+               <div class="footer__logo">
+                   <img src="img/logo-f.svg" alt="logo" class="f__logo" width="100" height="25">
+               </div>
+                <div class="footer__copyright">
+                    <p class="copyright__link">© 2018 «MOVIX»</p>
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="#" class="f__menu-link">О проекте</a></li>
+                    <li><a href="#" class="f__menu-link">Контакты</a></li>
+                    <li><a href="#" class="f__menu-link">Пользовательское соглашение</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__navigation -->
+        </div>
+    </footer>
+    <!--/Футер Сайта-->
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/header-fixed.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:false,
+    dots:false,
+    mouseDrag:false,
+    touchDrag:false,
+    navText: [
+  '<span class="arrow-owl arrow-left"></span>',
+  '<span class="arrow-owl arrow-right"></span>'
+],
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:7
+        },
+        600:{
+            items:7
+        },
+        1000:{
+            items:7
+        }
+    }
+})
+    </script>
+</body>
+</html>
